@@ -1,0 +1,32 @@
+{
+  "name": "CCA",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run clean && wdio wdio.conf.js && npm run report",
+    "report": "allure generate --clean && allure open",
+    "clean": "rm -rf allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/register": "^7.10.3",
+    "@wdio/cli": "^6.1.22",
+    "chai": "^4.2.0",
+    "webdriverio": "^6.1.22"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^6.1.22",
+    "@wdio/dot-reporter": "^6.1.14",
+    "@wdio/local-runner": "^6.1.22",
+    "@wdio/mocha-framework": "^6.1.19",
+    "@wdio/selenium-standalone-service": "^6.1.14",
+    "@wdio/spec-reporter": "^6.1.14",
+    "@wdio/sync": "^6.1.14"
+  }
+}
