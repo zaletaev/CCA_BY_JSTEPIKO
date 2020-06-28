@@ -22,7 +22,7 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+        './test/defaultFunctionality.js'
     ],
     //
     // ============
@@ -213,6 +213,7 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
+
     afterTest: function(test, context, { error, result, duration, passed, retries }) {
         if (!passed) {
             browser.takeScreenshot();

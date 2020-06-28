@@ -1,0 +1,17 @@
+{
+  "general": {
+    "header": "Counters",
+    "totalResult": "Total: 0",
+    "addNameField": "Counter Name",
+    "addNameFieldLabel": "Enter Counter Title:",
+    "defaultValueField": "50",
+    "defaultValueFieldLabel": "Enter Initial Count:",
+    "addCounterBtn": "ADD COUNTER"
+  },
+  "counter": {
+    "counterName": "",
+    "lowerLimitField": "",
+    "upperLimitField": "",
+    "countValue": ""
+  }
+}
