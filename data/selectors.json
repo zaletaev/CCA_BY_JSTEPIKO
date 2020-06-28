@@ -9,9 +9,14 @@
     "addCounterBtn": ".btn-success"
   },
   "counter": {
-    "counterName": "",
-    "lowerLimitField": "",
-    "upperLimitField": "",
-    "countValue": ""
+    "counterName": "h3",
+    "lowerLimitField": "[name='negative']",
+    "upperLimitField": "[name='positive']",
+    "countValue": ".badge",
+    "deleteBtn": ".delete",
+    "resetBtn": ".reset",
+    "editNameField": "[name='edit']",
+    "editNameFieldLabel": "label",
+    "blackBtn": ".btn-black"
   }
 }

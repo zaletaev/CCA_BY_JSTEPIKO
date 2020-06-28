@@ -1,5 +1,6 @@
 const selectorGen = require ('../data/selectors.json').general;
 const expectedGen = require ('./../data/expected.json').general;
+const selectorCnt = require ('../data/selectors.json').counter;
 
 describe('Complex Counter App', function () {
 
@@ -93,4 +94,45 @@ describe('Complex Counter App', function () {
 
     });
 
+    describe('Default Counter Elements exist', function () {
+
+        it('TC-016 Counter Name', function () {
+            const actual = $$(selectorCnt.counterName)[1].isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-017 Count Value', function () {
+            const actual = $(selectorCnt.countValue).isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-018 LLF', function () {
+            const actual = $(selectorCnt.lowerLimitField).isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-019 ULF', function () {
+            const actual = $(selectorCnt.upperLimitField).isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-020, TC-021 Default Sub and Add Buttons', function () {
+            const actual = $$(selectorCnt.blackBtn).filter(el => el.isDisplayed()).length;
+            const expected = 6;
+            expect(actual).toEqual(expected);
+        })
+
+/*
+        it('TC-007 Label for Default Value Field', function () {
+            const actual = $$(selectorGen.defaultValueFieldLabel)[$$(selectorGen.defaultValueFieldLabel).length-1].isDisplayed();
+            //$$('label')[$$('label').length-1]
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-008 Add Counter', function () {
+            const actual = $(selectorGen.addCounterBtn).isDisplayed();
+            expect(actual).toEqual(true);
+        })
+*/
+    });
 });
