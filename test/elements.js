@@ -92,7 +92,6 @@ describe('Complex Counter App', function () {
             const actual = $(selectorGen.addCounterBtn).getText();
             expect(actual).toEqual(expectedGen.addCounterBtn);
         })
-
     });
 
     describe('Default Counter Elements exist', function () {
@@ -141,5 +140,11 @@ describe('Complex Counter App', function () {
             const actual = $(selectorCnt.editNameFieldLabel).isDisplayed();
             expect(actual).toEqual(true);
         })
+    });
+
+    //Homework: TC 28-39
+    describe('Default Counter Elements value', function () {
+
+
     });
 });

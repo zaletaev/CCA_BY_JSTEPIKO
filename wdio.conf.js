@@ -22,7 +22,7 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        './test/defaultFunctionality.js'
+        './test/elements.js'
     ],
     //
     // ============

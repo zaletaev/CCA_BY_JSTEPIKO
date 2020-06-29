@@ -19,6 +19,7 @@
     "resetBtn": ".reset",
     "editNameField": "[name='edit']",
     "editNameFieldLabel": "label",
-    "blackBtn": ".btn-black"
+    "blackBtn": ".btn-black",
+    "error": ".alert"
   }
 }
