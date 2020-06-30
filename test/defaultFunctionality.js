@@ -30,13 +30,13 @@ describe('Default counter functionality', function () {
         const result = $(selectorCnt.error).isDisplayed();
         expect(result).toEqual(false);
     })
-/*
+
     it('TC-044 LLF = 1 and ULF = 1 gives 2 black buttons', function () {
-        browser.pause(1000);
-        //inputNumber('left', expectedDCF.inputMin);
+        browser.refresh();
+        inputNumber('left', expectedDCF.inputMin);
         inputNumber('right', expectedDCF.inputMin);
         const actual = $$(selectorCnt.blackBtn).filter(el => el.isDisplayed()).length;
-        expect(actual).toEqual(expectedDCF.countValueTC041);
+        expect(actual).toEqual(+expectedDCF.countValueTC041);
     })
-*/
+
 });
