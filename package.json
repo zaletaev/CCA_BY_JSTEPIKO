@@ -19,7 +19,7 @@
     "@babel/register": "^7.10.3",
     "@wdio/cli": "^6.1.22",
     "chai": "^4.2.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.4.0",
     "webdriverio": "^6.1.22"
   },
   "devDependencies": {
